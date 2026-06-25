@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "as-ref-scout"
+version = "1.0.0"
+description = "ArtStation art reference scouter - one-click search and collect art references"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+]
+keywords = ["artstation", "art-reference", "concept-art", "scraper"]
+
+[project.scripts]
+as-scout = "as_ref_scout.crawl:main"
+
+[project.urls]
+Source = "https://github.com/luser-dami/artstation-ref-scout"
